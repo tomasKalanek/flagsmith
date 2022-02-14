@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const Pusher = require("pusher");
+import env from "../../util/env";
 const pusher = new Pusher({
   appId: env.pusherappid,
   key: env.pusherkey,
