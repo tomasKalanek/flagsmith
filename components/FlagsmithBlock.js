@@ -15,7 +15,7 @@ const FlagsmithBlock = ({ id }) => {
                 setLastUpdated(Date.now().valueOf());
             }
         })
-        pusher.current = new Pusher(env.pusher, {
+        pusher.current = new Pusher(env.pusherkey, {
             cluster: 'eu',
         });
         channel.current = pusher.current.subscribe('flagsmith');

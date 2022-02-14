@@ -6,8 +6,6 @@ import flagsmith from "flagsmith";
 import Script from 'next/script'
 import {useState} from 'react';
 export default function Home() {
-    console.log('test');
-    console.log(process.env.PUSHERKEY);
   const [isReady, setReady] = useState(false)
   return (
     <div className={styles.container}>

@@ -1,11 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const Pusher = require("pusher");
 const pusher = new Pusher({
-  appId: process.env.pusherappid,
-  key: process.env.pusherkey,
-  secret: process.env.pushersecret,
-  cluster: process.env.pushercluster,
-  useTLS: !!process.env.pushertls
+  appId: env.pusherappid,
+  key: env.pusherkey,
+  secret: env.pushersecret,
+  cluster: env.pushercluster,
+  useTLS: env.pushertls
 });
 
 export default function handler(req, res) {
