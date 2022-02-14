@@ -13,3 +13,5 @@ export default function handler(req, res) {
       .then(()=>{res.status(200).json({ name: 'John Doe' })})
       .catch((e)=>{res.status(500).json({ e:e, name: 'John Doe' })})
 }
+
+

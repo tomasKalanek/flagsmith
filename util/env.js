@@ -1,4 +1,4 @@
 export default {
-    flagsmith:"VmyxnCfVjyrrRZZTt8pD95",
-    pusher:"7c73f13d1816f4f40cce"
+    flagsmith:"dkijg3UZubj3W5VDTcZuab",
+    pusher:"08e0448e244843a0a7af"
 }
