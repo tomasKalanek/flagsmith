@@ -19,7 +19,7 @@ const FlagsmithBlock = ({ id }) => {
             cluster: 'eu',
         });
         channel.current = pusher.current.subscribe('flagsmith');
-        channel.current.bind('webhook', ()=> {flagsmith.current.getFlags();});
+        channel.current.bind('color', ()=> {flagsmith.current.getFlags();});
         flagsmith.current.identify(id)
     },[id])
     const colour = flagsmith.current && flagsmith.current.getValue("colour");
